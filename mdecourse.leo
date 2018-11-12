@@ -23,11 +23,19 @@
 <v t="yen.20161105160252.7" a="E"><vh>封面投影片</vh>
 <v t="yen.20161105160252.8"><vh>封面投影片內容</vh></v>
 </v>
+<v t="leo.20181112074324.1"><vh>github classroom</vh>
+<v t="leo.20181112074324.2"><vh>2018Fall</vh></v>
+</v>
+<v t="leo.20181112074925.1" a="E"><vh>2018專案</vh>
+<v t="leo.20181112074925.2"><vh>CMSfimfly 與 kmol-editor</vh></v>
 </v>
 </v>
 </v>
 </v>
 </v>
+</v>
+<v t="leo.20181112074712.1"><vh>@button https server</vh></v>
+<v t="leo.20181112074725.1"><vh>@button ipv6 https server</vh></v>
 <v t="leo.20170915101117.1"><vh>temp</vh></v>
 </vnodes>
 <tnodes>
@@ -36,6 +44,93 @@
 mde.tw 即 mdecourse.github.io
 相關說明: http://project.mde.tw/blog/ji-jie-she-ji-gong-cheng-wang-zhan-de-duan-wang-zhi.html</t>
 <t tx="leo.20170915101117.1">[kmolab](http://chiamingyen.github.io/kmolab/blog)-[kmolab.github.io/blog](http://kmolab.github.io/blog) ([倉儲](https://github.com/kmolab))</t>
+<t tx="leo.20181112074324.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181112074324.2"># 2018 Fall Classroom
+
+* 機械設計系電腦輔助設計實習 - [mdecadp2018](https://github.com/mdecadp2018)
+* 機械設計系計算機程式 - [mdecp2018](https://github.com/mdecp2018)
+* 進修部車輛系計算機程式 -[vecp2018](https://github.com/vecp2018)
+
+
+</t>
+<t tx="leo.20181112074712.1">@language python
+import os
+import subprocess
+import threading
+import http.server, ssl
+
+def domake():
+    # build directory
+    os.chdir("./")
+    server_address = ('localhost', 5443)
+    httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print(os.getcwd())
+    print("5443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
+<t tx="leo.20181112074725.1">@language python
+import os
+import subprocess
+import threading
+import socket
+import http.server, ssl
+
+class HTTPServerV6(http.server.HTTPServer):
+    address_family = socket.AF_INET6
+  
+def domake():
+    # build directory
+    os.chdir("./")
+    ipv6_address = '::1'
+    server_address = (ipv6_address, 6443)
+    #httpd = http.server.HTTPServer(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd = HTTPServerV6(server_address, http.server.SimpleHTTPRequestHandler)
+    httpd.socket = ssl.wrap_socket(httpd.socket,
+                                   server_side=True,
+                                   certfile='localhost.crt',
+                                   keyfile='localhost.key',
+                                   ssl_version=ssl.PROTOCOL_TLSv1)
+    print("6443 https server started")
+    httpd.serve_forever()
+
+# 利用執行緒執行 https 伺服器
+make = threading.Thread(target=domake)
+make.start()</t>
+<t tx="leo.20181112074925.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20181112074925.2"># 2018 Fall 專案
+
+* 網際內容管理 - [CMSimfly](https://github.com/chiamingyen/cmsimfly)
+* KMOL 編輯器 - [kmol-editor](https://github.com/KmolYuan/kmol-editor) ([ref](https://github.com/mdecourse/kll3pp/issues/4))
+* 平面機構模擬與合成套件 -[pyslvs](https://github.com/KmolYuan/Pyslvs-PyQt5)
+* Arduino 資料傳輸套件 - [Pyquino](https://github.com/kmolLin/Pyquino)
+* 視覺辨識 - [cyphuno](https://github.com/kmolLin/object_detection)
+
+
+</t>
 <t tx="yen.20161105160252.1">@language xml
 @tabwidth -4
 @others
@@ -64,7 +159,7 @@ mde.tw 即 mdecourse.github.io
     
     &lt;!-- Theme used for syntax highlighting of code --&gt;
     &lt;link rel="stylesheet" href="https://cad-lab.github.io/cadlab_data/reveal/lib/css/zenburn.css"&gt;
-
+    &lt;link rel="icon" href="./favicon.ico" type="image/x-icon" /&gt;
     &lt;!-- Printing and PDF exports --&gt;
     &lt;script&gt;
         var link = document.createElement( 'link' );
@@ -132,19 +227,17 @@ mde.tw 即 mdecourse.github.io
 
 ### 機械設計工程系
 
-[2017SVCP](http://mdecourse.github.io/2017springvcp/blog/)-[2017SWCM](http://mdecourse.github.io/2017springwcm/blog/)-[2016FCP](https://mdecourse.github.io/2016fallcp/blog)([倉儲](https://github.com/mdecourse/2016fallcp))([a](https://github.com/mdecourse/2016fallcpa), [b](https://github.com/mdecourse/2016fallcpb))
+[17CP](http://mdecourse.github.io/2017springvcp/blog/)-[17WCM](http://mdecourse.github.io/2017springwcm/blog/)-[16CP](https://mdecourse.github.io/2016fallcp/blog)([倉儲](https://github.com/mdecourse/2016fallcp))([a](https://github.com/mdecourse/2016fallcpa),[b](https://github.com/mdecourse/2016fallcpb))-[17CD](http://mdecourse.github.io/2017springcd/blog/)-[16CADP](https://mdecourse.github.io/2016fallcadp/blog)([倉儲](https://github.com/mdecourse/2016fallcadp))([a](https://github.com/mdecourse/2016fallcadpa),[b](https://github.com/mdecourse/2016fallcadpb))
 
-[2017SCD](http://mdecourse.github.io/2017springcd/blog/)-[2016FCADP](https://mdecourse.github.io/2016fallcadp/blog)([倉儲](https://github.com/mdecourse/2016fallcadp))([a](https://github.com/mdecourse/2016fallcadpa), [b](https://github.com/mdecourse/2016fallcadpb))
+&lt;!-- [1a1](https://mde1a1.kmol.info)-[2a1](https://mde2a1.kmol.info)-([cpa](https://cpa.kmol.info),[b](https://cpb.kmol.info))-([cadpa](https://cadpa.kmol.info),[b](https://cadpb.kmol.info))-[17F](https://mde1a1.kmol.info/2017fall)-[kmolab](https://kmolab.github.io/blog)- --&gt; &lt;!-- [kmol.info](https://kmol.info)-[service](http://service.mde.tw)- --&gt;&lt;!-- [cadlab](http://cadlab.mde.tw) --&gt;
 
-[1a1](https://mde1a1.kmol.info)-[2a1](https://mde2a1.kmol.info)-[cpa](https://cpa.kmol.info)-[cpb](https://cpb.kmol.info)-[cadpa](https://cadpa.kmol.info)-[cadpb](https://cadpb.kmol.info)
+[blog](http://www.pyslvs.com/blog/)-[cms](http://www.pyslvs.com/content/)-[issues](https://github.com/pyslvs/pyslvs.github.io/issues)-[平面機構模擬與合成系統](https://github.com/KmolYuan/Pyslvs-PyQt5)
 
-[2017fall](https://mde1a1.kmol.info/2017fall)-[kmolab](https://kmolab.github.io/blog)-[kmol.info](https://kmol.info)-[service](http://service.mde.tw)-[cadlab](http://cadlab.mde.tw)
+[17CPa](https://github.com/scrum-1/scrum_pyqt5_calculator/issues/3)-[b](https://github.com/scrum-1/scrum_pyqt5_calculator/issues/4)-[17CADPa](https://github.com/scrum-1/scrum_cadp_final/issues/3)-[b](https://github.com/scrum-1/scrum_cadp_final/issues/4)-[Vimeo](https://vimeo.com/user24079973)-[Youtube](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
 
-[2017FCPa](https://github.com/scrum-1/scrum_pyqt5_calculator/issues/3)-[b](https://github.com/scrum-1/scrum_pyqt5_calculator/issues/4)-[2017FCADPa](https://github.com/scrum-1/scrum_cadp_final/issues/3)-[b](https://github.com/scrum-1/scrum_cadp_final/issues/4)-[Vimeo](https://vimeo.com/user24079973)-[Youtube](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
+[18CD](https://github.com/mdecourse/cd2018)-[18VCP](https://github.com/mdecourse/vecp2018)-[18WCM](https://github.com/mdecourse/wcms2018)-[Lua](http://mde.tw/vecp2018/lua/SchoolProject/)-[Heroku](http://wcms-scrum3.herokuapp.com)
 
-[2018SCD](https://github.com/mdecourse/cd2018)-[2018SVECP](https://github.com/mdecourse/vecp2018)-[2018SWCMS](https://github.com/mdecourse/wcms2018)-[Lua](http://mde.tw/vecp2018/lua/SchoolProject/) -[Heroku](http://wcms-scrum3.herokuapp.com)
-
-[Pyslvs.com](http://pyslvs.com/blog)-[開放源平面機構模擬與合成系統](https://github.com/KmolYuan/Pyslvs-PyQt5)
+[18CP](https://mdecourse.github.io/cp2018/)-[i](https://github.com/mdecourse/cp2018/issues)-[cpgx](http://cpgx.kmol.info)-[18CADP](https://mdecourse.github.io/cadp2018/)-[i](https://github.com/mdecourse/cadp2018/issues)-[KLL3PP](https://github.com/mdecourse/kll3pp)-[b](https://mdecdlab.github.io/lab-booking-cdlab/)
 
 [機械設計專題](http://project.mde.tw)
 
