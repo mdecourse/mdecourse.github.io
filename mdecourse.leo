@@ -233,7 +233,7 @@ make.start()</t>
 
 [17CPa](https://github.com/scrum-1/scrum_pyqt5_calculator/issues/3)-[b](https://github.com/scrum-1/scrum_pyqt5_calculator/issues/4)-[17CADPa](https://github.com/scrum-1/scrum_cadp_final/issues/3)-[b](https://github.com/scrum-1/scrum_cadp_final/issues/4)-[Vimeo](https://vimeo.com/user24079973)-[Youtube](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
 
-[18CD](https://github.com/mdecourse/cd2018)-[18VCP](https://github.com/mdecourse/vecp2018)-[18WCM](https://github.com/mdecourse/wcms2018)-[Lua](http://mde.tw/vecp2018/lua/SchoolProject/)-[Heroku](http://wcms-scrum3.herokuapp.com)
+[18CD](https://github.com/mdecourse/cd2018)-[18VCP](https://github.com/mdecourse/vecp2018)-[18WCM](https://github.com/mdecourse/wcms2018)-[Python-Course](http://mde.tw/python-course/)-[Lua](http://mde.tw/vecp2018/lua/SchoolProject/)-[Heroku](http://wcms-scrum3.herokuapp.com)
 
 [18CP](https://mdecourse.github.io/cp2018/)-[i](https://github.com/mdecourse/cp2018/issues)-[cpbgx](https://mdecp2018.github.io/finalproject-bgx)-[18CADP](https://mdecourse.github.io/cadp2018/)-[i](https://github.com/mdecourse/cadp2018/issues)-[KLL3PP](https://github.com/mdecourse/kll3pp)-[b](https://mdecdlab.github.io/lab-booking-cdlab/)
 
