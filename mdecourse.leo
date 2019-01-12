@@ -17,8 +17,11 @@
 <v t="yen.20161105160252.4"><vh>body</vh>
 <v t="yen.20161105160252.5"><vh>reveal div</vh>
 <v t="yen.20161105160252.6"><vh>slides div</vh>
-<v t="yen.20161105160252.7"><vh>封面投影片</vh>
-<v t="yen.20161105160252.8"><vh>封面投影片內容</vh></v>
+<v t="leo.20190112115133.1"><vh>封面投影片</vh>
+<v t="leo.20190112115133.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="yen.20161105160252.7"><vh>封面投影片2</vh>
+<v t="yen.20161105160252.8"><vh>封面投影片內容2</vh></v>
 </v>
 <v t="leo.20181112074324.1"><vh>github classroom</vh>
 <v t="leo.20181112074324.2"><vh>2018Fall</vh></v>
@@ -126,6 +129,30 @@ make.start()</t>
 * 平面機構模擬與合成套件 -[pyslvs](https://github.com/KmolYuan/Pyslvs-PyQt5)
 * Arduino 資料傳輸套件 - [Pyquino](https://github.com/kmolLin/Pyquino)
 * 視覺辨識 - [cyphuno](https://github.com/kmolLin/object_detection)
+
+
+</t>
+<t tx="leo.20190112115133.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190112115133.2">## 國立虎尾科技大學
+
+### 機械設計工程系
+
+[2019 Spring 網際內容管理](http://mde.tw/wcm2019)
+
+[2019 Spring 協同產品設計實習](http://mde.tw/cd2019)
+
+[blog](http://www.pyslvs.com/blog/) - [Pyslvs 使用手冊](http://www.pyslvs.com/content/) - [issues](https://github.com/pyslvs/pyslvs.github.io/issues) - [Pyslvs-UI](https://github.com/KmolYuan/Pyslvs-PyQt5)
+
+[Python-Course](http://mde.tw/python-course/) - [cpbgx](https://mdecp2018.github.io/finalproject-bgx) - [KLL3PP](https://github.com/mdecourse/kll3pp) - [b](https://mdecdlab.github.io/lab-booking-cdlab/) - [Youtube](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
+
 
 
 </t>
