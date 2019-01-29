@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2"/>
-<globals/>
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -11,22 +14,22 @@
 <v t="yen.20161112105128.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
 <v t="leo.20170830094232.1"><vh>about mde.tw</vh></v>
-<v t="yen.20161105160252.1"><vh>@clean index.html</vh>
-<v t="yen.20161105160252.2"><vh>html</vh>
+<v t="yen.20161105160252.1" a="E"><vh>@clean index.html</vh>
+<v t="yen.20161105160252.2" a="E"><vh>html</vh>
 <v t="yen.20161105160252.3"><vh>head</vh></v>
-<v t="yen.20161105160252.4"><vh>body</vh>
-<v t="yen.20161105160252.5"><vh>reveal div</vh>
-<v t="yen.20161105160252.6"><vh>slides div</vh>
-<v t="leo.20190112115133.1"><vh>封面投影片</vh>
+<v t="yen.20161105160252.4" a="E"><vh>body</vh>
+<v t="yen.20161105160252.5" a="E"><vh>reveal div</vh>
+<v t="yen.20161105160252.6" a="E"><vh>slides div</vh>
+<v t="leo.20190112115133.1" a="E"><vh>封面投影片</vh>
 <v t="leo.20190112115133.2"><vh>封面投影片內容</vh></v>
 </v>
-<v t="yen.20161105160252.7"><vh>封面投影片2</vh>
+<v t="yen.20161105160252.7" a="E"><vh>封面投影片2</vh>
 <v t="yen.20161105160252.8"><vh>封面投影片內容2</vh></v>
 </v>
-<v t="leo.20181112074324.1"><vh>github classroom</vh>
+<v t="leo.20181112074324.1" a="E"><vh>github classroom</vh>
 <v t="leo.20181112074324.2"><vh>2018Fall</vh></v>
 </v>
-<v t="leo.20181112074925.1"><vh>2018專案</vh>
+<v t="leo.20181112074925.1" a="E"><vh>2018專案</vh>
 <v t="leo.20181112074925.2"><vh>CMSfimfly 與 kmol-editor</vh></v>
 </v>
 </v>
@@ -53,7 +56,11 @@ mde.tw 即 mdecourse.github.io
 
 						
 </t>
-<t tx="leo.20181112074324.2"># 2018 Fall Classroom
+<t tx="leo.20181112074324.2">## 國立虎尾科技大學
+
+### 機械設計工程系
+
+#### 2018 Fall Classroom
 
 * 機械設計系電腦輔助設計實習 - [mdecadp2018](https://github.com/mdecadp2018)
 * 機械設計系計算機程式 - [mdecp2018](https://github.com/mdecp2018)
@@ -121,7 +128,11 @@ make.start()</t>
 
 						
 </t>
-<t tx="leo.20181112074925.2"># 2018 Fall 專案
+<t tx="leo.20181112074925.2">## 國立虎尾科技大學
+
+### 機械設計工程系
+
+#### 2018 Fall 專案
 
 * Python-Course - [python-course](https://github.com/mdecourse/python-course)
 * 網際內容管理 - [CMSimfly](https://github.com/chiamingyen/cmsimfly)
