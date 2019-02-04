@@ -156,6 +156,8 @@ make.start()</t>
 
 ### 機械設計工程系
 
+[網際內容管理網誌](https://2019wcm.blogspot.com/)
+
 [2019 Spring 網際內容管理](http://mde.tw/wcm2019)
 
 [2019 Spring 協同產品設計實習](http://mde.tw/cd2019)
@@ -208,6 +210,13 @@ make.start()</t>
     &lt;!--[if lt IE 9]&gt;
     &lt;script src="https://cad-lab.github.io/cadlab_data/reveal/lib/js/html5shiv.js"&gt;&lt;/script&gt;
     &lt;![endif]--&gt;
+    &lt;script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2140091590744860",
+          enable_page_level_ads: true
+     });
+&lt;/script&gt;
 &lt;/head&gt;
 
 </t>
