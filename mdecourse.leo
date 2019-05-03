@@ -188,7 +188,10 @@ make.start()</t>
 
 [2019 Spring 協同產品設計實習](http://mde.tw/cd2019)
 
-[2019 Spring WCM 期末報告示範網站](http://cpgx.kmol.info/wcm2019) - [2019 Spring CD 期末報告示範網站](http://cpgx.kmol.info/cd2019)
+[2019 Spring CD 期末報告示範網站](http://cpgx.kmol.info/cd2019)
+ 
+[2019 Spring WCM 期末報告示範網站](http://cpgx.kmol.info/wcm2019)
+
 
 
 </t>
