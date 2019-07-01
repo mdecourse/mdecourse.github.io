@@ -17,6 +17,9 @@
 <v t="yen.20161105160252.4"><vh>body</vh>
 <v t="yen.20161105160252.5"><vh>reveal div</vh>
 <v t="yen.20161105160252.6"><vh>slides div</vh>
+<v t="leo.20190701113111.1"><vh>封面投影片 2019 Fall</vh>
+<v t="leo.20190701113111.2"><vh>封面投影片內容 2019 Fall</vh></v>
+</v>
 <v t="leo.20190503093630.1"><vh>封面投影片3</vh>
 <v t="leo.20190503093630.2"><vh>封面投影片內容3</vh></v>
 </v>
@@ -184,15 +187,39 @@ make.start()</t>
 
 [網際內容管理網誌](https://2019wcm.blogspot.com/)
 
-[2019 Spring 網際內容管理](http://mde.tw/wcm2019)
+[2019 Spring 網際內容管理](http://mde.tw/wcm2019)-[期末示範網站](http://cpgx.kmol.info/wcm2019/)
 
-[2019 Spring 協同產品設計實習](http://mde.tw/cd2019)
+[2019 Spring 協同產品設計實習](http://mde.tw/cd2019)-[期末示範網站](http://cpgx.kmol.info/cd2019/)
 
 [2019 Spring CD A 班期末協同專案倉儲](https://github.com/scrum-1/cd2019a)-[網站](http://cpgx.kmol.info/cd2019a)
  
 [2019 Spring CD B 班期末協同專案倉儲](https://github.com/scrum-1/cd2019b)-[網站](http://cpgx.kmol.info/cd2019b/)
 
-[2019 Spring WCM 期末專案示範倉儲](https://github.com/scrum-1/wcm2019)-[網站](http://cpgx.kmol.info/wcm2019/)
+
+
+
+
+</t>
+<t tx="leo.20190701113111.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190701113111.2">## 國立虎尾科技大學
+
+### 機械設計工程系
+
+[網際內容管理網誌](https://2019wcm.blogspot.com/)
+
+[2019 Fall 計算機程式](http://mde.tw/cp2019)
+
+[2019 Fall 電腦輔助設計實習](http://mde.tw/cad2019)
+
+
 
 
 
