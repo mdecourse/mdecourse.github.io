@@ -97,7 +97,7 @@ make.start()</t>
 
 ### 機械設計工程系
 
-&lt;!-- [網際內容管理網誌](https://2019wcm.blogspot.com/) --&gt;
+[網際內容管理網誌](https://2019wcm.blogspot.com/)
 
 [KMOLab 教學影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
 
