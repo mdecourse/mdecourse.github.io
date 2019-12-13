@@ -2,10 +2,100 @@
 <p>Repository: <a href="https://github.com/mdecourse/mdecourse.github.io">https://github.com/mdecourse/mdecourse.github.io</a></p>
 <p>Reveal.js: <a href="https://mdecourse.github.io">https://mdecourse.github.io</a></p>
 <p>CMSiMDE: <a href="https://mdecourse.github.io/content">https://mdecourse.github.io/content</a></p>
-<p>Blog: <a href="https://mdecourse.github.io/blog">https://mdecourse.github.io/blog</a> </p><h1>Ubuntu</h1>
-<h1>Prog</h1><h1>CMS</h1>
+<p>Blog: <a href="https://mdecourse.github.io/blog">https://mdecourse.github.io/blog</a></p>
+<h4>KMOLab 信念</h4>
+<p>二十一世紀的科技大學, 在培育具世界觀與在地文化素養, 能適應環境並成功面對挑戰之專業人才. 所謂專業, 即具有專長, 能夠就業之謂. 所謂文化者, 因思考及概念而有之教化. 所謂素養, 即平日的涵養.</p>
+<p>Excellence is an art won by training and habituation. We do not act rightly because we have virtue or excellence, but we rather have those because we have acted rightly. We are what we repeatedly do. Excellence, then, is not an act but a habit.</p>
+<p>— Aristotle (384 BC – March 7, 322 BC)</p>
+<p>卓越須經由訓練與習慣養成才能獲得。並非具備品德或卓越能讓人舉止得宜，反而是舉止得宜能讓人卓越。經過切身重複實作，才可體會，卓越並非一種作為，而是習慣。</p>
+<p>— 亞理士多德 (西元前 384 年 – 西元前 322 年 3 月 7 日)</p>
+<p>體魄康強, 精神活潑, 舉止端莊, 人格健全, 便是大學生的風度. 不倦的追求真理, 熱烈的愛護國家, 積極的造福人類, 才是大學生的職志.</p>
+<p>— 羅家倫 (1928)</p>
+<h4>KMOLab Logo:</h4>
+<p><img height="87" src="/images/kmol_1172x340_red_3yrs.png" width="300"/></p>
+<p><img height="87" src="/images/kmol_1172x340_green_3yrs.png" width="300"/></p>
+<p><img alt="" height="87" src="/images/kmol_1172x340_blue_3yrs.png" width="300"/></p>
+<p><img alt="" height="87" src="/images/kmol_1172x340_yellow_3yrs.png" width="300"/></p>
+<p><img alt="" height="87" src="/images/kmol_1172x340_color_3yrs.png" width="300"/></p>
+<p><img alt="" height="87" src="/images/kmol_1172x340_bw_3yrs.png" width="300"/></p>
+<p><img alt="" height="300" src="/images/kmol_rotary_570x570.png" width="300"/></p>
+<p></p><h1>Ubuntu</h1>
+<h4>Ubuntu LTS Life Cycle</h4>
+<p><a href="https://ubuntu.com/about/release-cycle">https://ubuntu.com/about/release-cycle</a></p>
+<p>安裝注意事項:</p>
+<ol>
+<li>當採用純 IPv6 安裝 Ubuntu, 並在安裝過程設定代理主機後, 系統會將設定存入 /etc/apt/atp.conf.d 目錄中的 90curtin-aptproxy 檔案中, 若之後不需要在執行 apt 指令時使用 Proxy 代理主機時, 必須刪除檔案中的設定.</li>
+<li>
+<p>安裝 fcitx 中文輸入</p>
+<p>step 1</p>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">sudo apt install fcitx fcitx-chewing</blockquote>
+<p>step 2</p>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">sudo mv /usr/bin/ibus-daemon /usr/bin/ibus-daemon.bak</blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">sudo reboot</blockquote>
+<p>step 3</p>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">右上方以滑鼠點選 input method 中的 Configure 進入 Input Method Configuration 視窗設定畫面.</blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">畫面將只呈現 Keybord - English (US)</blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">必須增加 Chewing input method, 方法為點選左下方的 + 號, 去除 Only Show Current Language 選項, 然後用搜尋, 輸入 Chewing 表示要將注音輸入法納入 Input Method 中.</blockquote>
+<p>完成上述三項步驟後, 就可以利用 Ctrl + Space 或鍵盤左側的 Shift 鍵切換中英輸入, 選擇同音字時則利用方向鍵與數字鍵進行選字.</p>
+<p>fcitx 中文輸入是依照帳號設定</p>
+<p>安裝後, 必須逐一為每一個帳號設定使用 fcitx 中文輸入法, 而且 input method 中的 configure 中的 Addon 中的 Simplified Chinese To Traditional Chinese/Convert Simplified Chinese To Traditional Chinese 選項若打勾, 將會使用簡體中文, 若取消選擇, 才會使用繁體中文輸入系統.</p>
+</li>
+<li> create admin user
+<p>$sudo adduser username<br/>$sudo usermod -aG sudo username</p>
+</li>
+<li>
+<p>correct apt upgrade error</p>
+<p>While prepare cd12 for cad2019 course server, same error comes up: https://www.ostechnix.com/fix-dpkg-error-parsing-file-var-lib-dpkg-updates-0014-error-in-ubuntu/</p>
+<p>$ sudo rm /var/lib/dpkg/updates/0015<br/>$ sudo apt clean<br/>$ sudo apt update<br/>$ sudo dpkg --configure -a<br/>$ sudo apt upgrade</p>
+<p>before install nginx, uwsgi, squid and fossil scm, Ubuntu need to make sure all the system packages is the most updated version.</p>
+</li>
+<li>
+<p>install squid</p>
+<p>sudo apt install squid<br/>cd /etc/squid<br/>sudo rename squid.conf squid_orig.conf<br/>cd<br/>sftp username@ipv4_of_another_server<br/>cd /etc/squid<br/>get squid.conf</p>
+<p>quit<br/>sudo cp squid.conf /etc/squid<br/>sudo /etc/init.d/squid restart</p>
+<p>change hostname<br/>sudo hostnamectl set-hostname your_server_hostname<br/>sudo vi /etc/hosts<br/>add 127.0.0.1 your_server_hostname</p>
+</li>
+<li>reset Ubuntu password<br/>while booting, for bios startup computer, press shift, for uefi start computer, press esc to go to the boot menu, select from menu to boot for network and root setup, use sudo passwd username to change user password.</li>
+<li>
+<p>install CMSiMDE site<br/>sudo apt install python3-pip<br/>sudo apt install uwsgi uwsgi-plugin-python3<br/>sudo pip3 install flask lxml bs4 markdown flask_cors pelican uwsgi<br/>mkdir /home/kmol2018/uwsgi_ini<br/>cd uwsig_ini<br/>gedit uwsgi.ini<br/>cd /home/kmol2018<br/>git init newcms<br/>cd newcms</p>
+<p>add cmsimde repo in gitlab as submodule<br/>git submodule add https://gitlab.com/mdecourse/cmsimde.git cmsimde</p>
+<p>test newcms<br/>cd /home/kmol2018/newcms/cmsimde<br/>python3 wsgi.py</p>
+<p>setup newcms as uwsgi site</p>
+</li>
+</ol><h1>Ebooks</h1>
+<p><a href="/downloads/CalculusVolume1-OP_D5aX5TF.pdf">Calculus 電子書</a> (<a href="https://openstax.org/details/books/calculus-volume-1?Book%20details">來源</a>)</p>
+<p><a href="/downloads/Elementary Differential Equations.pdf">Elementary Differential Equations.pdf</a></p>
+<p><a href="/downloads/fast-fourier-transforms-22.1.pdf">Fast Fourier Series Transform.pdf</a></p>
+<p><a href="/downloads/calc3book.pdf">Vector Calculus.pdf</a></p>
+<p><a href="/downloads/FEP_2nd_Edition_4th_Printing.pdf">Finite Element Procedure.pdf</a></p>
+<p><a href="/downloads/Siklos-Advanced_Problems2.pdf">Advanced Problems in Mathematics 電子書</a> (<a href="https://www.openbookpublishers.com/product/1050">來源</a>)</p>
+<p>其他數學參考書: <a href="https://openstax.org/subjects/math">https://openstax.org/subjects/math</a></p>
+<p><a href="https://www.whitman.edu/mathematics/multivariable/">https://www.whitman.edu/mathematics/multivariable/</a></p>
+<p>Science 參考書: <a href="https://openstax.org/subjects/science">https://openstax.org/subjects/science</a></p>
+<p><a href="/downloads/prob.pdf">Introduction to Probability.pdf</a></p>
+<p><a href="https://yoshiwarabooks.org/">https://yoshiwarabooks.org/</a></p>
+<p><a href="https://open.umn.edu/opentextbooks/subjects/engineering">https://open.umn.edu/opentextbooks/subjects/engineering</a></p>
+<p><a href="http://www.openculture.com/free-math-textbooks">http://www.openculture.com/free-math-textbooks</a></p><h1>Prog</h1><h2>Dart</h2>
+<h2>Python</h2>
+<h2>Javascript</h2>
+<h2>ANSIC</h2>
+<h2>CPP</h2>
+<h2>Lua</h2>
+<h2>Red</h2><h1>CMS</h1>
 <h2>Fossil SCM</h2><h1>CAD</h1>
 <h2>NX</h2>
 <h2>Solvespace</h2><h1>CAE</h1>
 <h2>Range</h2>
-<p><a href="https://github.com/Range-Software/range3">https://github.com/Range-Software/range3</a> </p>
+<p><a href="https://github.com/Range-Software/range3">https://github.com/Range-Software/range3</a></p>
+<h2>FreeFEM</h2>
+<p><a href="https://github.com/FreeFem/FreeFem-sources">https://github.com/FreeFem/FreeFem-sources</a></p><h1>CAM</h1>
+<p><a href="https://github.com/filipecaixeta/cncwebsim">https://github.com/filipecaixeta/cncwebsim</a></p>
+<p><iframe height="400" src="/downloads/cncwebsim/index.html" width='600"'></iframe></p>
+<p><a href="http://www.anderswallin.net/CAM/">http://www.anderswallin.net/CAM/</a></p>
+<p><a href="https://github.com/mdecourse/opencamlib">https://github.com/mdecourse/opencamlib</a></p>
+<h4>3D printing:</h4>
+<p style="padding-left: 30px;"><a href="https://github.com/plangdon/3D-Printer-2018">https://github.com/plangdon/3D-Printer-2018</a> </p>
+<p style="padding-left: 30px;"><a href="https://github.com/MarlinFirmware/Marlin">https://github.com/MarlinFirmware/Marlin</a></p>
+<p style="padding-left: 30px;"><a href="https://github.com/LiangliangNan/Easy3D">https://github.com/LiangliangNan/Easy3D</a></p>
+<p style="padding-left: 30px;"></p>
+<p></p>

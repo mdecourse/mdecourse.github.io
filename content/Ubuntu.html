@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='Ubuntu.html'>Ubuntu</a><li class='has-children'><a href='Prog.html'>Prog</a><ul class='dropdown'><li><a href='Dart.html'>Dart</a><li><a href='Python.html'>Python</a><li><a href='Javascript.html'>Javascript</a><li><a href='ANSIC.html'>ANSIC</a><li><a href='CPP.html'>CPP</a><li><a href='Lua.html'>Lua</a><li><a href='Red.html'>Red</a></li></ul><li class='has-children'><a href='CMS.html'>CMS</a><ul class='dropdown'><li><a href='Fossil SCM.html'>Fossil SCM</a></li></ul><li class='has-children'><a href='CAD.html'>CAD</a><ul class='dropdown'><li><a href='NX.html'>NX</a><li><a href='Solvespace.html'>Solvespace</a></li></ul><li class='has-children'><a href='CAE.html'>CAE</a><ul class='dropdown'><li><a href='Range.html'>Range</a></li>
+                     <li><a href='About.html'>About</a><li><a href='Ubuntu.html'>Ubuntu</a><li><a href='Ebooks.html'>Ebooks</a><li class='has-children'><a href='Prog.html'>Prog</a><ul class='dropdown'><li><a href='Dart.html'>Dart</a><li><a href='Python.html'>Python</a><li><a href='Javascript.html'>Javascript</a><li><a href='ANSIC.html'>ANSIC</a><li><a href='CPP.html'>CPP</a><li><a href='Lua.html'>Lua</a><li><a href='Red.html'>Red</a></li></ul><li class='has-children'><a href='CMS.html'>CMS</a><ul class='dropdown'><li><a href='Fossil SCM.html'>Fossil SCM</a></li></ul><li class='has-children'><a href='CAD.html'>CAD</a><ul class='dropdown'><li><a href='NX.html'>NX</a><li><a href='Solvespace.html'>Solvespace</a></li></ul><li class='has-children'><a href='CAE.html'>CAE</a><ul class='dropdown'><li><a href='Range.html'>Range</a><li><a href='FreeFEM.html'>FreeFEM</a></li></ul><li><a href='CAM.html'>CAM</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,8 +154,50 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Prog.html'>Next</a> >> Prog<br /><h1>Ubuntu</h1>
-<br />About << <a href='About.html'>Previous</a> <a href='Prog.html'>Next</a> >> Prog</div>
+    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='Ebooks.html'>Next</a> >> Ebooks<br /><h1>Ubuntu</h1>
+<h4>Ubuntu LTS Life Cycle</h4>
+<p><a href="https://ubuntu.com/about/release-cycle">https://ubuntu.com/about/release-cycle</a></p>
+<p>安裝注意事項:</p>
+<ol>
+<li>當採用純 IPv6 安裝 Ubuntu, 並在安裝過程設定代理主機後, 系統會將設定存入 /etc/apt/atp.conf.d 目錄中的 90curtin-aptproxy 檔案中, 若之後不需要在執行 apt 指令時使用 Proxy 代理主機時, 必須刪除檔案中的設定.</li>
+<li>
+<p>安裝 fcitx 中文輸入</p>
+<p>step 1</p>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">sudo apt install fcitx fcitx-chewing</blockquote>
+<p>step 2</p>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">sudo mv /usr/bin/ibus-daemon /usr/bin/ibus-daemon.bak</blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">sudo reboot</blockquote>
+<p>step 3</p>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">右上方以滑鼠點選 input method 中的 Configure 進入 Input Method Configuration 視窗設定畫面.</blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">畫面將只呈現 Keybord - English (US)</blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">必須增加 Chewing input method, 方法為點選左下方的 + 號, 去除 Only Show Current Language 選項, 然後用搜尋, 輸入 Chewing 表示要將注音輸入法納入 Input Method 中.</blockquote>
+<p>完成上述三項步驟後, 就可以利用 Ctrl + Space 或鍵盤左側的 Shift 鍵切換中英輸入, 選擇同音字時則利用方向鍵與數字鍵進行選字.</p>
+<p>fcitx 中文輸入是依照帳號設定</p>
+<p>安裝後, 必須逐一為每一個帳號設定使用 fcitx 中文輸入法, 而且 input method 中的 configure 中的 Addon 中的 Simplified Chinese To Traditional Chinese/Convert Simplified Chinese To Traditional Chinese 選項若打勾, 將會使用簡體中文, 若取消選擇, 才會使用繁體中文輸入系統.</p>
+</li>
+<li> create admin user
+<p>$sudo adduser username<br/>$sudo usermod -aG sudo username</p>
+</li>
+<li>
+<p>correct apt upgrade error</p>
+<p>While prepare cd12 for cad2019 course server, same error comes up: https://www.ostechnix.com/fix-dpkg-error-parsing-file-var-lib-dpkg-updates-0014-error-in-ubuntu/</p>
+<p>$ sudo rm /var/lib/dpkg/updates/0015<br/>$ sudo apt clean<br/>$ sudo apt update<br/>$ sudo dpkg --configure -a<br/>$ sudo apt upgrade</p>
+<p>before install nginx, uwsgi, squid and fossil scm, Ubuntu need to make sure all the system packages is the most updated version.</p>
+</li>
+<li>
+<p>install squid</p>
+<p>sudo apt install squid<br/>cd /etc/squid<br/>sudo rename squid.conf squid_orig.conf<br/>cd<br/>sftp username@ipv4_of_another_server<br/>cd /etc/squid<br/>get squid.conf</p>
+<p>quit<br/>sudo cp squid.conf /etc/squid<br/>sudo /etc/init.d/squid restart</p>
+<p>change hostname<br/>sudo hostnamectl set-hostname your_server_hostname<br/>sudo vi /etc/hosts<br/>add 127.0.0.1 your_server_hostname</p>
+</li>
+<li>reset Ubuntu password<br/>while booting, for bios startup computer, press shift, for uefi start computer, press esc to go to the boot menu, select from menu to boot for network and root setup, use sudo passwd username to change user password.</li>
+<li>
+<p>install CMSiMDE site<br/>sudo apt install python3-pip<br/>sudo apt install uwsgi uwsgi-plugin-python3<br/>sudo pip3 install flask lxml bs4 markdown flask_cors pelican uwsgi<br/>mkdir /home/kmol2018/uwsgi_ini<br/>cd uwsig_ini<br/>gedit uwsgi.ini<br/>cd /home/kmol2018<br/>git init newcms<br/>cd newcms</p>
+<p>add cmsimde repo in gitlab as submodule<br/>git submodule add https://gitlab.com/mdecourse/cmsimde.git cmsimde</p>
+<p>test newcms<br/>cd /home/kmol2018/newcms/cmsimde<br/>python3 wsgi.py</p>
+<p>setup newcms as uwsgi site</p>
+</li>
+</ol><br />About << <a href='About.html'>Previous</a> <a href='Ebooks.html'>Next</a> >> Ebooks</div>
         
     <!-- footer -->
       <div class="container">
