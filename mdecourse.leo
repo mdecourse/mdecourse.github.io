@@ -97,13 +97,13 @@ make.start()</t>
 
 ### 機械設計工程系
 
-[網際內容管理網誌](https://2019wcm.blogspot.com/)
+[KMOL 網誌](https://mdecourse.blogspot.com/) | [KMOL 影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
 
-[KMOLab 教學影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
+[CP2019](http://mde.tw/cp2019) | [CAD2019](http://mde.tw/cad2019) | [Lab.mde.tw](http://lab.mde.tw) 
 
-[2019 Fall 計算機程式](http://mde.tw/cp2019)
+[CD2020](http://mde.tw/cd2020) | [WCM2020](http://mde.tw/wcm2020) | [WCMJ2020](http://mde.tw/wcmj2020)
 
-[2019 Fall 電腦輔助設計實習](http://mde.tw/cad2019)
+[CD2020PJ1](http://mde.tw/cd2020pj1)
 
 </t>
 <t tx="yen.20161105160252.1">@language xml
