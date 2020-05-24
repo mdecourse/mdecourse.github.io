@@ -99,10 +99,10 @@ make.start()</t>
 <t tx="leo.20200520153540.3">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
 &lt;title&gt;
-mde.tw
+國立虎尾科技大學 機械設計工程系 KMOLab
 &lt;/title&gt;
-    &lt;meta name="description" content="A framework for easily creating beautiful presentations using HTML"&gt;
-    &lt;meta name="author" content="Hakim El Hattab"&gt;
+    &lt;meta name="description" content="國立虎尾科技大學 機械設計工程系 KMOLab 課程網站"&gt;
+    &lt;meta name="author" content="KMOLab"&gt;
     
     &lt;meta name="apple-mobile-web-app-capable" content="yes"&gt;
     &lt;meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"&gt;
