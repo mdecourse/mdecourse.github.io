@@ -183,7 +183,7 @@ make.start()</t>
 
 ### 機械設計工程系
 
-[KMOL 網誌](https://mdecourse.blogspot.com/) | [KMOL 影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
+[ENG](http://mde.tw/eng) | [KMOL 網誌](https://mdecourse.blogspot.com/) | [KMOL 影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
 
 [CP2019](http://mde.tw/cp2019) | [CAD2019](http://mde.tw/cad2019) | [Lab.mde.tw](http://lab.mde.tw) 
 
