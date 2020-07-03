@@ -183,13 +183,7 @@ make.start()</t>
 
 ### 機械設計工程系
 
-[ENG](http://mde.tw/eng) | [KMOL 網誌](https://mdecourse.blogspot.com/) | [KMOL 影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g/videos)
-
-[CP2019](http://mde.tw/cp2019) | [CAD2019](http://mde.tw/cad2019) | [Lab](http://mde.tw/lab) 
-
-[CD2020](http://mde.tw/cd2020) | [WCM2020](http://mde.tw/wcm2020) | [WCMJ2020](http://mde.tw/wcmj2020)
-
-[CD2020PJ1](http://mde.tw/cd2020pj1)
+[ENG](http://mde.tw/eng) | [KMOL 網誌](https://mdecourse.blogspot.com/) | [Lab](http://mde.tw/lab) 
 
 
 </t>
