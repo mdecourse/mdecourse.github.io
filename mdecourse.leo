@@ -185,7 +185,7 @@ make.start()</t>
 
 [Eng](http://mde.tw/eng) | [KMOL 網誌](https://mdecourse.blogspot.com/) | [Lab](http://mde.tw/lab) 
 
-[cp2020](http://mde.tw/cp2020) | [cad2020](http://mde.tw/cad2020) 
+[cp2020](http://mde.tw/cp2020) | [MDE&amp;PME 網誌](https://nfumde.blogspot.com/) | [cad2020](http://mde.tw/cad2020) 
 
 
 </t>
