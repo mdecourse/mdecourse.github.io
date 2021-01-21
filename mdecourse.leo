@@ -187,7 +187,7 @@ make.start()</t>
 
 [cp2020](http://mde.tw/cp2020) | [MDE&amp;PME 網誌](https://nfumde.blogspot.com/) | [cad2020](http://mde.tw/cad2020) 
 
-[wcmj2021](http://mde.tw/wmj2021) | [wcm2021](http://mde.tw/wcm2021) | [cd2021](http://mde.tw/cd2021) 
+[wcmj2021](http://mde.tw/wcmj2021) | [wcm2021](http://mde.tw/wcm2021) | [cd2021](http://mde.tw/cd2021) 
 
 
 </t>
