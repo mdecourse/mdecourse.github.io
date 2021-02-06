@@ -300,7 +300,7 @@ make.start()</t>
 
 #### 2019 Spring
 
-[wcmj2019](http://mde.tw/wcmj2019) | [wcm2019](http://mde.tw/wcm2019) | [cd2019](http://mde.tw/cd2019) 
+[wcm2019](http://mde.tw/wcm2019) | [cd2019](http://mde.tw/cd2019) 
 
 
 </t>
@@ -321,7 +321,7 @@ make.start()</t>
 
 [2016fallcpa](http://mde.tw/2016fallcpa) | [2016fallcpb](http://mde.tw/2016fallcpb) | [2016fallcp](http://mde.tw/2016fallcp) | [2016fallcadp](http://mde.tw/2016fallcadp) 
 
-[2016fallcadp](https://github.com/mdecourse/2016fallcadp) | [2016fallcadpa](https://github.com/mdecourse/2016fallcadpa) | [2016fallcadpb](https://github.com/mdecourse/2016fallcadpb)
+[2016fallcadp](https://github.com/mdecourse/2016fallcadp) | [2016fallcadpa](https://github.com/mdecourse/2016fallcadpa) | [2016fallcadpb](https://github.com/mdecourse/2016fallcpb)
 
 
 
@@ -341,9 +341,13 @@ make.start()</t>
 
 #### 2018 Fall
 
-[vecp2018](http://mde.tw/vecp2018) | [cp2018](http://mde.tw/cp2018) | [cadp2018](http://mde.tw/cadp2018) 
+[vecp2018](http://github.com/mdecourse/vecp2018) | [cp2018](http://mde.tw/cp2018) | [cadp2018](http://mde.tw/cadp2018) 
+
+[Lua](http://mde.tw/vecp2018/lua/SchoolProject/)
 
 [cp2018finalproject](https://mdecp2018.github.io/finalproject-bgx) | [2018fall](https://github.com/mdecourse/2018fall)
+
+[2018fallwiki](https://github.com/scrum-1/scrum-1.github.io/wiki)
 
 
 
@@ -426,7 +430,7 @@ make.start()</t>
 
 [2015fallcadpb](https://github.com/2015fallhw/2015fallcadpb) | [2015fallcadpa](https://github.com/2015fallhw/2015fallcadpa) | [2015fallcadp](https://github.com/coursemdetw/2015Fall_CADP)
 
-[2015cdb](https://github.com/coursemdetw/2015cdb) | [2015cda](https://github.com/coursemdetw/2015cda)
+[2015cdb](https://github.com/coursemdetw/2015cdb)
 
 
 </t>
