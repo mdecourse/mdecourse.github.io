@@ -17,6 +17,9 @@
 <v t="leo.20200520153540.4"><vh>body</vh>
 <v t="leo.20200520153540.5"><vh>reveal div</vh>
 <v t="leo.20200520153540.6"><vh>slides div</vh>
+<v t="yen.20210625194818.1"><vh>2021 Fall</vh>
+<v t="yen.20210625194852.1"><vh>2021 Fall page</vh></v>
+</v>
 <v t="leo.20200520153540.7"><vh>2021 Spring</vh>
 <v t="leo.20200520153540.8"><vh>2021 Spring page</vh></v>
 </v>
@@ -532,5 +535,24 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="yen.20161112105128.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
+<t tx="yen.20210625194818.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;</t>
+<t tx="yen.20210625194852.1">## 國立虎尾科技大學
+
+### 機械設計工程系
+
+#### 2021 Fall
+
+[Eng](http://mde.tw/eng) | [cmstemplate](http://mde.tw/cmstemplate) | [Lab](http://mde.tw/lab) 
+
+ [MDE&amp;PME 網誌](https://nfumde.blogspot.com/) | [教學影片](https://www.youtube.com/channel/UCJ0Ye3mhMApH0yxAcwCXs5g) | [KMOL 網誌](https://mdecourse.blogspot.com/)
+
+[cp2021](http://mde.tw/cp2021) | [cad2021](http://mde.tw/cad2021)
+
+
+</t>
 </tnodes>
 </leo_file>
